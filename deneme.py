@@ -1,5 +1,5 @@
-a=2
-b=4
-c=a+b
+from pytube import Playlist
+p = Playlist('https://www.youtube.com/playlist?list=PLb-TC_fWtyN7obzvertlODVm9at-ykLPE')
 
-print(c)
+for video in p.videos:
+         print(video)
